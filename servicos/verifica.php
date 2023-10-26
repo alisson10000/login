@@ -10,3 +10,4 @@ echo $contagem = mysqli_num_rows($resultado);
  }else{
      header("Location: ./servicos/naoautenticado.php");
  }
+ //teste maquina do professor.
