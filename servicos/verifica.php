@@ -11,3 +11,5 @@ echo $contagem = mysqli_num_rows($resultado);
      header("Location: ./servicos/naoautenticado.php");
  }
  //teste maquina do professor.
+ 
+ echo 'novo';
