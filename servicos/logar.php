@@ -28,6 +28,7 @@ $resultado = mysqli_query($con, $consulta);
      
  }else{
      echo 'Login ou senha inválido!';
+     echo 'Click <a href="../cadastro.php">aqui</a> para logar';
  }
 
 
