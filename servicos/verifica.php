@@ -12,4 +12,3 @@ echo $contagem = mysqli_num_rows($resultado);
  }
  //teste maquina do professor.
  
- echo 'novo';

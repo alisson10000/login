@@ -15,20 +15,20 @@ $consulta = mysqli_query($con, $consultaLogin);
 
 //$contagemLogin = mysqli_num_rows($consultaLogin);
 
-echo $contagemLogin;
+ $contagemLogin;
 
 while ($row = mysqli_fetch_array($consulta)) {
     $contagemLogin++;
 }
 
-echo $contagemLogin;
+$contagemLogin;
 
 if ($contagemLogin > 0) {
     echo 'Login já utilizado!!!';
 } else {
 
     mysqli_query($con, $cadastro);
-    echo 'cadastro realizado com sucesso!!!';
+    echo "cadastro realizado com sucesso click <a href='../index.php'>aqui</a> para logar!!!";
 }
 
 
