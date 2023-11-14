@@ -29,7 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
         
         <ul>
             <li><a href="cadastroInterno.php">Cadastro</a></li>
-            <li><a href="">edição</a></li>
+            <li><a href="editaUsuario.php">edição</a></li>
             <li><a href="">exclusão</a></li>
         </ul>
 
