@@ -39,17 +39,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 $buscar = mysqli_query($con, $consulta);
 
                 while ($row = mysqli_fetch_array($buscar)) {
-
+                    $id = $row['idUsuario'];
                     $nome = $row['nomeUsuario'];
                     $login = $row['loginUsuario'];
                     $senha = $row['senhaUsuario'];
                 }
                 ?>
                 <form method="POST" action="servicos/editarUsuario.php" name="frmEditar" id="frmEditar">
-                    <input type="text" value="<?php echo $nome; ?>" name="nome" id="nome"/>
-                    <input type="text"  value="<?php echo $login; ?>"  name="login" id="login"/>
-                    <input type="text"  value="<?php echo $senha; ?>"  name="senha" id="senha"/>
-                    <input type="button" value="editar" />
+                    <input  type="hidden" value="<?php echo $id; ?>" name="matricula" />
+                    <input required="" type="text" value="<?php echo $nome; ?>" name="nome" id="nome"/>
+                    <input required="" type="text"  value="<?php echo $login; ?>"  name="login" id="login"/>
+                    <input required="" type="text"  value="<?php echo $senha; ?>"  name="senha" id="senha"/>
+                    <input type="submit" value="editar" />
                 </form>
                 <?php
             }
