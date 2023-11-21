@@ -10,7 +10,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
     <head>
         <meta charset="UTF-8">
         <title></title>
-        <script src="js/funcoes.js"></script>
     </head>
     <body>
         <p><a href="servicos/sair.php">sair</a>  </p>
@@ -27,23 +26,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 
 
         </p>
-
         <ul>
             <li><a href="cadastroInterno.php">Cadastro</a></li>
             <li><a href="editaUsuario.php">edição</a></li>
-               <li><a href="excluiUsuario.php">exclusão</a></li>
+            <li><a href="excluiUsuario.php">exclusão</a></li>
         </ul>
-
-        <form name="frmCadastro" method="POST" id="frmCadastro" action="servicos/cadastroUsuario.php">
-            <input type="text" name="nome" id="nome" placeholder="digite seu nome" />
-            <input type="text" name="login" id="login" placeholder="digite seu login" />
-            <input type="password" name="senha" id="senha" placeholder="digite sua senha"  />
-            <input type="password" name="confirmaSenha" id="confirmaSenha" placeholder="repita a sua senha" />
-            <input type="button" onclick="validaCadastro()" value="cadastrar" />
-
+        <form method="POST" action="servicos/excluirUsuario.php">
+            <input required="" placeholder="informe a matricula para exclusão" type="text" name="idUsuario" id="idUsuario" />
+            <input type="submit" value="excluir" name="name">
         </form>
-
-
-
     </body>
 </html>
