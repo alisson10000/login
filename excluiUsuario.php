@@ -30,6 +30,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             <li><a href="cadastroInterno.php">Cadastro</a></li>
             <li><a href="editaUsuario.php">edição</a></li>
             <li><a href="excluiUsuario.php">exclusão</a></li>
+              <li><a href="listaUsuario.php">listagem</a></li>
         </ul>
         <form method="POST" action="servicos/excluirUsuario.php">
             <input required="" placeholder="informe a matricula para exclusão" type="text" name="idUsuario" id="idUsuario" />

@@ -32,6 +32,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             <li><a href="cadastroInterno.php">Cadastro</a></li>
             <li><a href="editaUsuario.php">edição</a></li>
                <li><a href="excluiUsuario.php">exclusão</a></li>
+                 <li><a href="listaUsuario.php">listagem</a></li>
         </ul>
 
         <form name="frmCadastro" method="POST" id="frmCadastro" action="servicos/cadastroUsuario.php">
